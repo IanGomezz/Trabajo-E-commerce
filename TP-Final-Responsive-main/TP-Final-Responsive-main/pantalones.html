@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DressMeUp - Compra y vende</title>
+
+        <link rel="stylesheet" href="css/eslito pantalones.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+        <script src="js/formulario_jquery.js"></script>
+
+</head>
+<body>
+
+    <!-- HTML pagina principal -->
+
+<header>
+    
+        
+  <img src="img/Logo-DressMeUp.PNG" alt="Logo-DressMeUp" class="logo">
+    
+  <div class="div-search-box">
+      <div class="search-box">
+          <input type="text" placeholder="Buscar productos, marcas..">
+          <button type="submit" id="boton-buscar"><p id="buscar-p">Buscar</p></button>
+  
+      </div>
+  </div>
+
+  <div class="container-icon" id="iconoCarrito">
+    <div class="container-cart-icon">
+      <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="icon-cart"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+      />
+    </svg>
+    <div class="count-products">
+      <span id="contador-productos">0</span>
+    </div>
+    </div>
+  
+
+    <div class="container-cart-products hidden-cart" id="contenedorCarrito">
+      <div class="row-product">
+      <div class="cart-product">
+        <div class="info-cart-product">
+                        <span class="cantidad-producto-carrito">1</span>
+                        <p class="titulo-producto-carrito">Remera negra</p>
+                        <span class="precio-producto-carrito">$1500</span>
+                    </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon-close"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+    </div>
+
+                <div class="cart-total">
+                    
+                  <div>
+                    <a href="TARJETA.html" id="botonPagar"><button>PAGAR</button></a>
+                  </div>
+                    <span class="total-pagar">$1500</span>
+                    
+                </div>
+                
+    </div>
+  </div>
+</header>
+
+
+
+<main>
+    <section>    
+      <div class="container-items">
+        <div class="cards-productos"  class="info-product">
+          <div class="product" class="info-product" id="caja-producto">
+            <img src="img/pantalon naranja.jpeg" alt="Producto 1">
+            <h2>Joggin beish</h2>
+           <p class="price">$2200</p>
+            <button class="btn-add-cart">Comprar</button>
+        </div>
+        <div class="product" class="info-product" id="caja-producto">
+            <img src="img/pantalon gris.jpeg" alt="Producto 1">
+            <h2>Bermuda de jean</h2>
+            <p class="price">$2300</p>
+            <button class="btn-add-cart">Comprar</button>
+        </div>
+        <div class="product" class="info-product" id="caja-producto">
+            <img src="img/pantalon violeta.jpeg" alt="Producto 1">
+            <h2>Joggin violeta</h2>
+            <p class="price">$2500</p>
+            <button class="btn-add-cart">Comprar</button>
+        </div>
+        <div class="product" class="info-product" id="caja-producto">
+            <img src="img/pantalon verde.jpeg" alt="Producto 1">
+            <h2>Joggin verde-gris</h2>
+            <p class="price">$2800</p>
+            <button class="btn-add-cart">Compar</button>
+        </div>
+      </div>    
+    </div>
+    </section>
+  </main>
+
+
+
+
+
+    
+
+
+
+<footer >
+    <div class="div-form">
+        <form action="" id="formulario_contacto">
+          <br>
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="inputs-footer">
+          <br>
+          
+          <input type="text" name="email" id="email" placeholder="Email" class="inputs-footer">
+          <br>
+          
+          <select name="tipo_solicitud" id="tipo_solicitud">
+            <option value="" hidden>Selecionar</option>
+            <option value="sugerencia">Sugerencia</option>
+            <option value="reclamo">Reclamo</option>
+            <option value="consulta">Consulta</option>
+          </select>
+          <br>
+          
+          <textarea name="mensaje" id="mensaje"  placeholder="Dejanos tu comentario"></textarea>
+          <br>
+
+          <div id="botones-footer">
+          <input type="reset" value="Limpiar" id="limpiar">
+          <button type="button" id="guardar">Guardar</button>
+        </div>
+
+        </form> 
+        
+      </div>
+
+        <ul class="ul-footer">
+          <li><a href="#">Trabaja con nosotros</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Políticas de privacidad</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+      
+</footer>
+<script src="js/minicart.js"></script>
+<script src="js/carritodemierda.js"></script>
+</body>
+</html>

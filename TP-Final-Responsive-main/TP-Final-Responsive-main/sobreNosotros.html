@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DressMeUp - Compra y vende</title>
+
+        <link rel="stylesheet" href="/css/sobreNosotros.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+        
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+        <script src="/js/formulario_jquery.js"></script>
+
+</head>
+<body>
+
+    <!-- HTML pagina principal -->
+
+<header>
+    
+        <img src="/img/Logo-DressMeUp.PNG" alt="Logo-DressMeUp" class="logo">
+    
+    <div class="div-search-box">
+        <div class="search-box">
+            <input type="text" placeholder="Buscar productos, marcas..">
+            <button type="submit" id="boton-buscar"><p id="buscar-p">Buscar</p></button>
+    
+        </div>
+    </div>
+
+    <nav class="nav">
+        <ul class="menu-nav">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#div-form">Ayuda</a></li>
+          <li><a href="sobreNosotros.html">Sobre Nosotros</a></li>
+        </ul> 
+    </nav>
+</header>
+
+
+
+<main> 
+  <h1>Conocenos</h1>
+<div class="contenedor">
+      <div class="cards-presentacion">
+
+          <img src="img/mujer-ejecutiva-marga.jpg" alt="">
+          <p id="descripcion-nos">Diseñadora UX/UI cofundadora</p>
+
+      </div>
+
+      <div class="cards-presentacion">
+
+        <img src="img/mauro.jfif" alt="">
+
+
+        <p id="descripcion-nos">Director general Fundador</p>
+
+      </div>
+
+      <div class="cards-presentacion">
+
+        <img src="img/ivan.jfif" alt="">
+        <p id="descripcion-nos">Productor ejecutivo cofundador</p>
+
+      </div>
+
+      <div class="cards-presentacion">
+
+        <img src="img/tomi.jfif" alt="">
+        <p id="descripcion-nos">Director de finanzas cofundador</p>
+
+      </div>
+  </div> 
+  <div id="map"></div>
+  <script src="js/script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUhSQFdm0X8QVtFZr9dmwOlpCJ-qU_72c&callback=iniciarMap"></script>
+  
+  
+
+</main>
+
+
+
+  
+
+
+<footer >
+    <div class="div-form" id="div-form">
+        <form action="" id="formulario_contacto">
+          <br>
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="inputs-footer">
+          <br>
+          
+          <input type="text" name="email" id="email" placeholder="Email" class="inputs-footer">
+          <br>
+          
+          <select name="tipo_solicitud" id="tipo_solicitud">
+            <option value="" hidden>Selecionar</option>
+            <option value="sugerencia">Sugerencia</option>
+            <option value="reclamo">Reclamo</option>
+            <option value="consulta">Consulta</option>
+          </select>
+          <br>
+          
+          <textarea name="mensaje" id="mensaje"  placeholder="Dejanos tu comentario"></textarea>
+          <br>
+
+          <div id="botones-footer">
+          <input type="reset" value="Limpiar" id="limpiar">
+          <button type="button" id="guardar">Guardar</button>
+        </div>
+
+        </form> 
+        
+      </div>
+
+        <ul class="ul-footer">
+          <li><a href="#">Trabaja con nosotros</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Políticas de privacidad</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+      
+</footer>
+
+
+</body>
+</html>

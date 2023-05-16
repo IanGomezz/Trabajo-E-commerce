@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 250vh;
+    justify-content: space-between;
+
+}
+header{
+    position: absolute;
+    background-color: #b100a2;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    
+    width: 10%;
+    height: 60%;
+    margin-left: 5%;
+
+}
+
+
+.nav{
+    position: relative;
+    width: 40%;
+    height: 50%;
+
+}
+
+.menu-nav{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    position: relative;
+    justify-content: space-around;
+   
+}
+
+.menu-nav li{
+    background-color: black;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.div-search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px; 
+    background-color: #b100a2;
+    width: 60%;
+}
+
+.search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background-color: #FFF;
+    border-radius: 25px; 
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    margin-left: 5%;
+}
+
+#boton-buscar{
+    height: 100%;
+    width: 30%;
+    font-size: 20px;
+}
+
+#buscar-p{
+    font-size: 10px;
+    position: relative;
+}
+
+.search-box input{
+    width: 90%;
+    padding: 3%;
+    border: none;
+    font-size: 80%;
+    font-weight: 1rem;
+    color: #333;
+    background-color: transparent;
+    outline: none;
+}
+
+.search-box button{
+    border: solid #FFF 2px;
+    background-color: #3498db;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.search-box button:hover{
+    background-color: #2980b9;
+}
+
+
+
+/*Cuerpo*/
+main{
+    background-image: url(/img/fondo\ negro.jpg);
+    background-size: cover;
+    display: flex;
+    flex: 1;
+    height: 67%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 50% 50%;
+    justify-content: space-between;
+    row-gap: 10%;
+    width: 95%;
+    height: 50%;
+    padding: 1%;
+     
+}
+
+
+h1{
+    margin-top: 15%;
+    color: #FFF;
+    z-index: 1;
+    
+}
+
+.cards-presentacion{
+    
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    background-image: url(/img/fondo-nosotros.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 5%;
+    
+}
+
+.cards-presentacion img{
+    width: 60%;
+    height: 60%;
+    border-radius: 5%;
+}
+
+.cards-presentacion p{
+    width: 40%;
+    height: 20%;
+    margin-top: 48%;
+    
+}
+
+/* api maps */
+#map {
+    height:500px ;
+    width: 50%;
+    margin-bottom: 5px;
+}
+/*Footer*/
+
+footer{
+    display: flex;
+    width: 100%;
+    min-height: 7rem;
+    position: relative;
+    background-color: #333;
+    color: #FFF;
+}
+
+.ul-footer{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    align-items: center;
+    color: white;
+    
+}
+
+.ul-footer a{
+    color: white;
+}
+
+.inputs-footer{
+    width: 50%;
+    
+    
+}
+
+.div-form{
+    width: 30%;
+}
+
+
+#formulario_contacto{
+
+}
+
+
+@media screen and (max-width: 420px) {
+    /* Reglas de estilo para pantallas con un ancho maximo de 420px */
+body{
+    height: 280vh;
+}
+
+header{
+    display: flex;
+    align-items: flex-start;
+}
+.logo{
+    width: 25%;
+    height: 60%;
+    margin-left: 2%;
+    margin-top: 8%;
+}
+
+.div-search-box{
+    display: flex;
+    height: 90px; 
+    background-color: #b100a2;
+    width: 60%;
+    margin-top: 11%;
+}
+
+.search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background-color: #FFF;
+    border-radius: 25px; 
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    margin-left: 5%;
+}
+
+#boton-buscar{
+    height: 90%;
+    width: 60%;
+    font-size: 20px;
+}
+
+#buscar-p{
+    font-size: 10px;
+    position: relative;
+}
+
+#map{
+    width: 100%;
+    
+
+}
+
+.search-box input{
+    width: 90%;
+    padding: 3%;
+    border: none;
+    font-size: 80%;
+    font-weight: 1rem;
+    color: #333;
+    background-color: transparent;
+    outline: none;
+}
+
+.search-box button{
+    border: solid #FFF 2px;
+    background-color: #3498db;
+    color: white;
+    font-weight: 200;
+    text-transform: uppercase;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.search-box button:hover{
+    background-color: #2980b9;
+}
+
+.nav{
+   height: 100%;
+   display: flex;
+   align-content: space-evenly;
+}
+.menu-nav{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 2px;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    align-content: space-evenly;
+}
+
+.menu-nav li{
+    background-color: black;
+    padding: 10%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*Estilos para el cuerpo de la pagina*/
+main{
+    background-image: url(/img/fondo\ negro.jpg);
+    background-size: cover;
+    flex: 1;
+    height: 67%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin-top: 50%;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 25%;
+    height: 65%;
+    row-gap: 2%;
+    justify-content: center;
+}
+
+}
+
+.cards-presentacion img{
+   
+    height: 37%;
+   
+}
+/*Footer*/
+footer{
+    display: flex;
+    width: 100%;
+    min-height: 7rem;
+    position: relative;
+    background-color: #333;
+    color: #FFF;
+}
+
+.ul-footer{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    width: auto;
+    align-items: start;
+}
+
+.ul-footer a{
+    display: flex;
+    list-style: none;
+    color: #FFF;
+    font-size: 10px;
+    padding: 10px;
+    margin-left: auto;
+}
+
+.div-form{
+    width: auto;
+}
+
+#formulario_contacto{
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.inputs-footer{
+    width: 55%;
+}
+
+#botones-footer{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+
+
